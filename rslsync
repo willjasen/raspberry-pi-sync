@@ -1,0 +1,19 @@
+#! /bin/sh
+# /etc/init.d/btsync
+#
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+start)
+    /home/pi/.btsync/btsync --config /home/pi/.btsync/btsync.conf
+    ;;
+stop)
+    killall btsync
+    ;;
+*)
+    echo "Usage: /etc/init.d/btsync {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
