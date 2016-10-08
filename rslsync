@@ -1,17 +1,17 @@
 #! /bin/sh
-# /etc/init.d/btsync
+# /etc/init.d/rslsync
 #
 
 # Carry out specific functions when asked to by the system
 case "$1" in
 start)
-    /home/pi/.btsync/btsync --config /home/pi/.btsync/btsync.conf
+    /home/pi/.rslsync/rslsync --config /home/pi/.rslsync/rslsync.conf
     ;;
 stop)
-    killall btsync
+    killall rslsync
     ;;
 *)
-    echo "Usage: /etc/init.d/btsync {start|stop}"
+    echo "Usage: /etc/init.d/rslsync {start|stop}"
     exit 1
     ;;
 esac
