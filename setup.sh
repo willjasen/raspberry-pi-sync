@@ -7,3 +7,6 @@ cp rslsync.conf ~/.rslsync
 sudo chmod 755 /etc/init.d/rslsync
 sudo update-rc.d rslsync defaults
 sudo service rslsync start
+
+#Clean up
+rm ~/.rslsync/resilio-sync_arm.tar.gz
