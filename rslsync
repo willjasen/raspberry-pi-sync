@@ -5,7 +5,7 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
 start)
-    /home/pi/.rslsync/rslsync --config /home/pi/.rslsync/rslsync.conf
+    /home/pi/.rslsync/rslsync
     ;;
 stop)
     killall rslsync
