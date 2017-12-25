@@ -10,6 +10,10 @@ start)
 stop)
     killall rslsync
     ;;
+restart)
+    killall rslsync
+    /home/pi/.rslsync/rslsync
+    ;;
 *)
     echo "Usage: /etc/init.d/rslsync {start|stop}"
     exit 1
