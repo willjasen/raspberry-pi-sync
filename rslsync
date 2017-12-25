@@ -15,7 +15,7 @@ restart)
     /home/pi/.rslsync/rslsync
     ;;
 *)
-    echo "Usage: /etc/init.d/rslsync {start|stop}"
+    echo "Usage: /etc/init.d/rslsync {start|stop|restart}"
     exit 1
     ;;
 esac
